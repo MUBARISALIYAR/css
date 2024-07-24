@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.relative{
+            position: relative;
+        }
+        img{
+            height: auto;
+            width:100%;
+            opacity: .3;
+        }
+        div.topleft{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 18px;
+            color: rgb(8, 8, 8);
+
+        }
+        div.topright{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            color: rgb(8, 8, 8);
+        }
+        div.bottomleft{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 18px;
+            color: rgb(8, 8, 8);
+
+        }
+        div.bottomright{
+            position: absolute;
+            bottom  : 10px;
+            right: 10px;
+            font-size: 18px;
+            color: rgb(8, 8, 8);
+
+        }
+        div.center{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            color: rgb(8, 8, 8);
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="relative">
+        <img src="monk.webp" alt="">
+        <div class="topleft">top left</div>
+        <div class="topright">top right</div>
+        <div class="bottomleft">bottom LEFT</div>
+        <div class="bottomright">bottom RIGHT</div>
+        <div class="center">CENTER</div>
+    </div>
+</body>
+</html>
