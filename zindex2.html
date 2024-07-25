@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            position: relative;
+        }
+        .sub1{
+            position: relative;
+            z-index: 1;
+            background-color: aquamarine;
+            width: 50%;
+            height: 100px;
+            top: 100px;
+        }
+        .sub2{
+            position: absolute;
+            z-index: 2;
+            background-color: blueviolet;
+            width: 500px;
+            height: 700px;
+            top: 0px;
+            left: 100px;
+        }
+        .sub3{
+            position: absolute;
+            z-index: 3;
+            background-color: rgb(14, 212, 57);
+            width: 700px;
+            height: 400px;
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub1">Z INDEX 1</div>
+        <div class="sub2">Z INDEX 2</div>
+        <div class="sub3">Z INDEX 3</div>
+    </div>
+</body>
+</html>
