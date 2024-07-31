@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            grid-area: head;
+            background-color:aquamarine;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: antiquewhite;
+            justify-content: center;
+            text-align: center;
+
+        }
+        .nav a{
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .nav li {
+            float: left;
+            display:block;
+            padding: 17px;
+        }
+        .menu{
+            grid-area: menu;
+            background-color: blueviolet;
+        }
+        .img{
+            grid-area: img;
+            background-color: brown;
+        }
+        .msg{
+            grid-area: msg;
+            background-color: darkcyan;
+            
+        }
+
+        .btn{
+            grid-area: btn;
+            background-color: darkslategrey;
+            position: relative;
+
+        
+        }
+        .readmore{
+            position: absolute;
+            background-color: rgb(22, 46, 46);
+            color: azure;
+            height: 65px;
+            width: 50%;
+            
+        }
+        .view{
+            position: absolute;
+            color: azure;
+            width: 50%;
+            left: 50%;
+        }
+
+        .main{
+            display: grid;
+            grid-template-rows: 75px 530px 100px 65px;
+            grid-template-areas:
+            'head head head head nav nav nav'
+            'menu menu menu menu img img img'
+            'msg msg msg msg img img img'
+            'btn btn btn btn img img img'
+        }
+        h1,h3,h2{
+            text-align: center;
+        }
+        .imgs{
+            height: 697px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="head"><h1>WEB DIARY</h1></div>
+
+        <div class="nav">
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+        </div>
+
+        <div class="menu">
+            <h2>CSS GRID EXAMPLE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perspiciatis nesciunt quis deleniti ea iusto, accusantium temporibus quia quaerat iste asperiores! Sequi alias nostrum incidunt nulla, voluptate labore. Sunt, repellat.</p>
+        </div>
+
+        <div class="img"><img class="imgs" src="bg.webp" alt=""></div>
+
+        <div class="msg">
+            <h2>"lorem ipsum dolor sit amet"</h2>
+        </div>
+
+        <div class="btn">
+            <div class="readmore"><h3>read more</h3></div>
+            <div class="view"><h3>view all</h3></div>
+        </div>
+    </div>
+</body>
+</html>
